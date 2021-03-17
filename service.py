@@ -7,8 +7,8 @@ import json
 
 app = Flask(__name__)
 if __name__ == '__main__':
-    app.debug = True
-    app.run()
+    app.debug = False
+    app.run(host="0.0.0.0')
 
 @app.route("/")
 def hello_world():
